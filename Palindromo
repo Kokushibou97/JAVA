@@ -1,0 +1,27 @@
+Un palíndromo es una palabra, frase, número o cualquier otra secuencia de caracteres que se lee igual hacia adelante que hacia atrás. Por ejemplo, "radar", "reconocer", "1221", etc. 
+public class Palindromo {
+    public static void main(String[] args) {
+        String palabra = "reconocer"; // Palabra a verificar
+
+        // Eliminamos los espacios y convertimos a minúsculas para ignorar mayúsculas y minúsculas
+        palabra = palabra.replaceAll("\\s+", "").toLowerCase();
+
+        // Verificamos si es palíndromo
+        boolean esPalindromo = true;
+        for (int i = 0; i < palabra.length() / 2; i++) {
+            if (palabra.charAt(i) != palabra.charAt(palabra.length() - i - 1)) {
+                esPalindromo = false;
+                break;
+            }
+        }
+
+        // Mostramos el resultado
+        if (esPalindromo) {
+            System.out.println("La palabra \"" + palabra + "\" es un palíndromo.");
+        } else {
+            System.out.println("La palabra \"" + palabra + "\" no es un palíndromo.");
+        }
+    }
+}
+
+
