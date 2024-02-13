@@ -1,0 +1,18 @@
+El origen del uso de i y j como variables de control en la programación, particularmente en bucles como for, es una convención que se originó en los primeros días de la programación, 
+específicamente en los lenguajes de programación como Fortran y ALGOL.
+
+Durante el desarrollo de estos lenguajes en la década de 1950 y principios de la década de 1960, los programadores solían utilizar nombres de variables cortos para ahorrar espacio en la memoria, 
+ya que en esos días la memoria era extremadamente limitada. 
+Por lo tanto, utilizar letras cortas como i, j, k, etc., se convirtió en una práctica común.
+
+Además, en algunos lenguajes de programación como Fortran, las variables debían declararse al comienzo del programa y solo podían tener un carácter en su nombre. 
+Por lo tanto, el uso de letras simples fue necesario.
+
+Estas convenciones se han mantenido a lo largo del tiempo y han sido adoptadas en una amplia variedad de lenguajes de programación modernos, 
+como C, C++, Java, Python, etc. Los nombres i, j, k se utilizan comúnmente para iteradores en bucles for, mientras que x, y, z son a menudo utilizados para coordenadas en matemáticas y gráficos, 
+aunque esto puede variar dependiendo del contexto y las convenciones del lenguaje de programación específico.
+
+
+
+
+
