@@ -1,0 +1,93 @@
+La teoría de inicializaciones en Java se refiere al proceso de asignar valores iniciales a variables y objetos. 
+
+Inicialización de variables primitivas: 
+1.Las variables primitivas (como int, double, boolean, char, float etc...) pueden inicializarse directamente al declararlas o más tarde en el código. 
+Si una variable primitiva se declara pero no se inicializa explícitamente, Java asigna un valor predeterminado (por ejemplo, 0 para int, 0.0 para double, false para boolean, etc...).
+
+Ejemplo:
+int x = 5; // Inicialización directa
+
+double y;
+y = 10.5; // Inicialización posterior
+
+
+2.Inicialización de objetos: Los objetos en Java se inicializan mediante la palabra clave new, seguida del constructor de la clase. 
+Un constructor es un método especial que se llama automáticamente cuando se crea un objeto. 
+Los valores de los atributos de un objeto se pueden inicializar dentro del constructor.
+
+Ejemplo:
+class Persona {
+    String nombre;
+    int edad;
+    
+    // Constructor
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+}
+
+// Crear un objeto Persona y asignar valores
+Persona persona1 = new Persona("Juan", 30);
+
+
+3.Inicialización estática: Las variables y bloques de inicialización estática se ejecutan solo una vez, cuando se carga la clase en memoria. 
+Las variables estáticas mantienen su valor durante toda la vida útil del programa y se inicializan antes de que se llame a cualquier constructor o se acceda a cualquier miembro no estático.
+
+class Ejemplo {
+    static int contador;
+    
+    static {
+        contador = 0; // Inicialización estática
+    }
+}
+
+
+4.Bloques de inicialización: Además de los constructores, Java permite la inicialización de variables de instancia utilizando bloques de inicialización. 
+Estos bloques se ejecutan cada vez que se crea una instancia de la clase.
+class Ejemplo {
+    int x;
+    
+    // Bloque de inicialización
+    {
+        x = 10; // Inicialización de x
+    }
+}
+
+
+5.Inicialización de matrices: Las matrices en Java se pueden inicializar de varias formas, ya sea especificando valores al declararlas o mediante un bucle de inicialización.
+
+Ejemplo:
+int[] numeros = {1, 2, 3, 4, 5}; // Inicialización directa
+int[] cuadrados = new int[5]; // Inicialización con tamaño
+for (int i = 0; i < cuadrados.length; i++) {
+    cuadrados[i] = i * i; // Inicialización mediante bucle
+}
+
+
+ejemplo:
+public class MatrizEjemplo {
+    public static void main(String[] args) {
+        // Inicialización de una matriz de 3x3
+        int[][] matriz = new int[3][3];
+        
+        // Inicialización de valores utilizando un bucle
+        int contador = 1;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                matriz[i][j] = contador;
+                contador++;
+            }
+        }
+        
+        // Imprimir la matriz
+        System.out.println("Matriz inicializada:");
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j] + "\t");
+            }
+            System.out.println(); // Cambiar de línea después de cada fila
+        }
+    }
+}
+
