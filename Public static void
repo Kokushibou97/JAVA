@@ -1,0 +1,18 @@
+"public static void" is a set of keywords used to define a method or function signature. Let's break down what each part means:
+public: This is an access modifier, which specifies the visibility of the method. "public" means that the method can be accessed from any other class.
+
+static: This keyword indicates that the method belongs to the class itself rather than to any particular instance of the class. It means that the method can be called without creating an instance of the class.
+
+void: This is the return type of the method. "void" means that the method does not return any value. If a method returns a value, you would specify the data type of the returned value (e.g., int, String, etc.).
+
+Putting it all together, "public static void" signifies that the method:
+
+Is accessible from any other class.
+Belongs to the class itself (not tied to any particular instance).
+Does not return any value.
+
+public static void printHello() {
+    System.out.println("Hello, world!");
+}
+
+n this example, printHello() is a method that can be accessed from any other class, can be called without creating an instance of its class, and does not return any value. It simply prints "Hello, world!" to the console.
