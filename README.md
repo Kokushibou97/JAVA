@@ -1,2 +1,2 @@
 # JAVA
-Most used and demanded languaje.
+Most used and demanded language.
