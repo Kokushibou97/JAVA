@@ -1,0 +1,16 @@
+Java es un lenguaje de programación tipado, lo que significa que todas las variables deben tener un tipo de datos específico definido en tiempo de compilación y no pueden cambiar de tipo durante la ejecución del programa. Esto proporciona seguridad y claridad en el código al hacer que el comportamiento de las variables sea más predecible y menos propenso a errores.
+
+En Java, los tipos de datos pueden ser primitivos o clases. Algunos ejemplos de tipos de datos primitivos en Java incluyen int, double, boolean, char, etc. Estos tipos de datos representan valores simples y están almacenados directamente en la memoria.
+
+Por otro lado, los tipos de datos de clase son aquellos que representan objetos y son instancias de clases definidas por el programador o del propio lenguaje. Por ejemplo, String, Integer, Double, etc., son ejemplos de tipos de datos de clase en Java.
+
+Aquí tienes un ejemplo de declaración de variables en Java:
+
+int edad = 30; // tipo de dato primitivo
+double salario = 2500.50; // tipo de dato primitivo
+boolean esEstudiante = false; // tipo de dato primitivo
+String nombre = "Juan"; // tipo de dato de clase
+
+En este ejemplo, edad, salario, y esEstudiante son variables que almacenan tipos de datos primitivos (int, double, y boolean, respectivamente), mientras que nombre es una variable que almacena un tipo de datos de clase (String).
+
+Java también es un lenguaje de programación fuertemente tipado, lo que significa que las conversiones entre tipos de datos deben ser explícitas y deben cumplir ciertas reglas definidas por el lenguaje. Esto ayuda a reducir errores y hace que el código sea más seguro y fácil de entender.
