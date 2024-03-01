@@ -1,0 +1,8 @@
+Hashtable is a data structure that stores key-value pairs.
+It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.
+HashTables provide constant-time performance for basic operations like get() and put(), assuming a good hash function and proper handling of collisions.
+HashTables do not maintain the order of elements.
+In Java, Hashtable is a synchronized implementation of the Map interface, while HashMap is an unsynchronized implementation. It's more common to use HashMap for better performance unless synchronization is explicitly needed.
+
+HashMap<String, Integer> map = new HashMap<String, Integer>(); // Creates a HashMap with String keys and Integer values
+map.put("apple", 5); // Associates the key "apple" with the value 5
