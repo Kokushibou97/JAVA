@@ -1,0 +1,8 @@
+ArrayList is a part of the Java Collections Framework and provides a dynamic array-like data structure.
+Unlike arrays, ArrayLists can dynamically grow and shrink in size as elements are added or removed.
+ArrayLists can store elements of any data type.
+Elements in an ArrayList are accessed using methods such as get() and set().
+ArrayLists offer flexibility in resizing and manipulation but may have slightly slower performance compared to arrays for random access.
+
+ArrayList<String> list = new ArrayList<String>(); // Creates an ArrayList of Strings
+list.add("Hello"); // Adds "Hello" to the ArrayList
