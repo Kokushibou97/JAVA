@@ -1,0 +1,24 @@
+¿Qué ocurre cuando generamos una instanciación en una superclase?
+Cuando se genera una instancia de una superclase en Java, se está creando un objeto de esa superclase. 
+Sin embargo, es importante tener en cuenta que las clases abstractas y las interfaces, que son las que generalmente actúan como superclases en este contexto, no pueden ser instanciadas directamente.
+
+Instanciación de una clase concreta: Si la superclase es una clase concreta (es decir, no es abstracta ni una interfaz), entonces se crea un objeto de esa clase específica. 
+Esto implica que el constructor de la superclase se llama y cualquier inicialización necesaria dentro de ese constructor se lleva a cabo.
+
+class Superclase {
+    Superclase() {
+        System.out.println("Constructor de Superclase");
+    }
+}
+
+class Subclase extends Superclase {
+    Subclase() {
+        System.out.println("Constructor de Subclase");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Subclase instancia = new Subclase();
+    }
+}
