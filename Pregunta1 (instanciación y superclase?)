@@ -22,3 +22,11 @@ public class Main {
         Subclase instancia = new Subclase();
     }
 }
+
+
+el resultado en la consola es:
+Constructor de Superclase
+Constructor de Subclase
+
+
+Instanciación de una clase abstracta o una interfaz: Si la superclase es abstracta o una interfaz, no se puede instanciar directamente. Intentar hacerlo resultará en un error en tiempo de compilación.
